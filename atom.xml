@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Cristian Planas]]></title>
+  <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/blog/"/>
+  <updated>2012-02-03T20:27:44+02:00</updated>
+  <id>http://Gawyn.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Big models, small controllers]]></title>
+    <link href="http://Gawyn.github.com/blog/blog/2012/02/01/big-models/"/>
+    <updated>2012-02-01T11:04:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/blog/2012/02/01/big-models</id>
+    <content type="html"><![CDATA[<p>OK, yeah, the title of this entry is one of the most common and repeated
+sentences about Rails (and MVC in general) development. But there is
+something else: <strong>it&#8217;s a big, big, truth</strong>.</p>
+
+<p>Being myself quite an eccentric developer, a lot of times I
+started in a language without caring about this kind of advises. OK, I
+follow most of the typical patterns -trying to maintain a scalable,
+blablabla code- but nothing very specific, certainly nothing that cares
+particularly about MVC.</p>
+
+<p>So when I started to develop my first Rails project, <a href="http://www.fundidoanegro.net">Fundido a Negro</a>
+, I gave a shit about maintaining
+small controllers and did as most Rails beginners do: creating
+grotesquely giant controllers. After some months, that made the code
+almost impossible to understand, and even if I could have continued with
+it, it was boring and confusing. So I stopped the project in a &#8220;more or
+less OK&#8221; phase and started with something else.</p>
+
+<p>After some months and experiences, I naturally understood what every
+Rails guru (and most of developers) say: a big controller is a terrible
+pain in the ass. But why a big model is (much) better than a big
+controller? I don&#8217;t really know the correct reason; I only can adventure
+a few hypothesis that, I think, tell a lot about MVC.</p>
+
+<ul>
+<li><p><strong>What the fuck is a controller?</strong>. Of the three elements in the
+MVC, we can easily identify the first one with &#8220;real&#8221; objects (as in
+object-oriented); the views are, like in the famous tale, the only part
+of the real world (more like the data world) that users can see; they
+care about the relationship between the user and the models. So far,
+it&#8217;s OK. But what are controllers? Only the middlemen, the border
+policemen between the world of the data/objects/models and the view
+country where users live.</p></li>
+<li><p><strong>Code in the model is easier to reuse and harder to duplicate</strong>. Imagine
+that in a given action, you need the first n objects which its relation
+x applies to a certain condition. If you write that method in the model you
+can reuse it any other time, or even define it as a scope and
+save you an awful lot of code. Giving access to every action of every controller to
+that method will save you from the dangers of duplication, and also will
+make you more conscious of the tools you already have created, as the
+models tends to be in the center.</p></li>
+<li><p><strong>A big model is good for your imagination</strong>. When you have available
+methods that deal with the data in your application in multiple
+different ways, it&#8217;s easier for you to think about new features.</p></li>
+</ul>
+
+
+<p>Right now, I already feel like I&#8217;m repeating the obvious, but
+I will show you another example. Those two pieces of code to the same:</p>
+
+<p>Big controller style:</p>
+
+<pre><code>def index_by_trending
+  @premieretweets = Movie.with_tweet.inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>Small controller style:</p>
+
+<pre><code>def index_by_trending
+  @premieretweets = Tweet.index_trending
+end
+
+(In the model)
+def self.index_trending
+  tweets = Movie.with_tweet.inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>OK. Now let&#8217;s imagine we create another action in the same controller,
+one that needs only the first 5 elements:</p>
+
+<p>Big controller style:</p>
+
+<pre><code>def short_index_by_trending
+  @premieretweets = Movie.with_tweet[0..5].inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>Small controller style:</p>
+
+<pre><code>def short_index_by_trending
+  @premieretweets = Tweet.index_trending[0..5]
+end
+</code></pre>
+
+<p>In the end, you are reusing and not repeating code with the &#8220;small
+controller style&#8221; solution and well, it also looks much tidier.</p>
+
+<p>Those are some of the reasons why I really appreciate initiatives like
+inherit_resources, even if I don&#8217;t really use it so often (shame on me).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why do I love method_missing]]></title>
+    <link href="http://Gawyn.github.com/blog/blog/2012/01/29/why-do-i-love-method-missing/"/>
+    <updated>2012-01-29T17:27:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/blog/2012/01/29/why-do-i-love-method-missing</id>
+    <content type="html"><![CDATA[<p>Every Ruby developer has some tricks that he loves. Sometimes it&#8217;s not even necessary to use them a lot: it&#8217;s enough if you like them only in a philosophical or aesthetical way. When you talk about Ruby to a newcomer, the first thing you do is to give an enthusiastic description about that technique, your favourite one. And for me, I guess it&#8217;s <code>method_missing</code>.</p>
+
+<h2>What is <code>method_missing</code>?</h2>
+
+<p>I discovered method_missing in a great Ruby book: <em>Metaprogramming Ruby</em> by Paolo Perrotta. Originally, <em>method_missing</em> is a function that is only called when Ruby can&#8217;t find a given method into an object. If the object is the last in the jerarchy (in 1.9, BasicObject), <code>method_missing</code> raises an error; if not, it calls the same method in the inmediate superior object in the jerarchy.</p>
+
+<h2>Oh, a method to raise an error. And why should I care?</h2>
+
+<p>Because remember, in Ruby you can redefine methods as you like. With that feature, <code>method_missing</code> becomes the ultimate hook: you can intercept literally every action (that doesn&#8217;t have a method defined yet)) and treat it as you wish. For example, let&#8217;s make that everytime we call <code>write_{#something}</code>, Ruby writes it:</p>
+
+<pre><code>def method_missing(method, *args)
+  method_name = method.to_s
+  if method_name.start_with?('write_')
+    puts method_name[6..-1]
+  else puts 'This method does not exist here'
+  end
+end
+</code></pre>
+
+<h2>That sounds like quite weird (and useless) stuff&#8230;</h2>
+
+<p>Maybe, but it&#8217;s in the core of some of Ruby most popular gems, like (guess) Rails. Have your ever thought how some ActiveRecords methods like <code>find_by_#{attribute}</code> work? You are right, thanks to <code>method_missing</code>.</p>
+
+<p>Actually, ActiveRecords combines <code>method_missing</code> with another great metaprogramming technique: dynamic methods. The first time you call a reader or writer method in an object of a given class, those methods are not still defined: then <code>method_missing</code> appears, defining the actions for each of the table columns. Clever, elegant and really, really useful.</p>
+
+<h2>Whoa, now it sounds cool. Which are its flaws?</h2>
+
+<p>It doesn&#8217;t sound cool, <strong>it is cool</strong>. But OK, it has some flaws. As with some other metaprogramming techniques, one is tempted to use them constantly, even when there isn&#8217;t any reason to use it over dynamic methods or even normal vanilla methods. And those are much better in terms of cost.</p>
+
+<p>Another big flaw: it&#8217;s hard as hell to debug. In the end, we are &#8220;hacking&#8221; an error method, and one of the most basic ones.</p>
+
+<h2>OK, now I see the pros and the cons. But why do you like it so much?</h2>
+
+<p>As I told in the beginning, it&#8217;s a philosophical matter. <code>method_missing</code> ilustrates perfectly those famous words by Matz:</p>
+
+<blockquote><p>Ruby trusts you. Ruby treats you as a grown-up programmer. It gives you great power such as meta-programming. But you need to remember that with great power comes great responsibility.</p></blockquote>
+
+<p>To be able to wait in the backdoor for those treacherous method calls and giving them a good beating -I mean, dealing with them- it really changed my concept of software development. And I guess that is why I like <code>method_missing</code>. Exactly the same reason that makes me love Ruby.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to my new blog!]]></title>
+    <link href="http://Gawyn.github.com/blog/blog/2012/01/29/welcome-to-my-new-blog/"/>
+    <updated>2012-01-29T03:44:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/blog/2012/01/29/welcome-to-my-new-blog</id>
+    <content type="html"><![CDATA[<p>Being at the same time an IT guy and a literature lover, I guess it&#8217;s normal I created a lot of blogs in my life: <a href="http://gawyn.blogspot.com/">El blog de Gawyn</a>, <a href="http://librosyfilms.wordpress.com/">Libros y Films</a>, and specially <a href="http://cafemarat.blogspot.com/">Café Marat</a> a blog with 73 (long) entries written in almost two years and that even after not being updated for more then three years, is still receiving almost 1.000 visits every month. I also created a cinema magazine, <a href="http://fundidoanegro.net">Fundido a Negro</a> that was also my first experience with Rails.</p>
+
+<p>But, so far, this blogs were essencially about some of my other passions: literature and cinema. <strong>This blog will be different: it&#8217;s main topic will be my experiences with Ruby and other languages.</strong> Of course, I know that it&#8217;s always risky to predict the real content of something before creating it, but at least that is my purpose.</p>
+
+<p>But why should a developer write about his job? First of all, to share the new lessons one takes everyday with other developers; right now, for any of us, it&#8217;s impossible to think about how it would be our coding without the help of the community via Google, blogs or <a href="http://stackoverflow.com/">Stackoverflow</a>. But also because, quoting Einstein:</p>
+
+<blockquote><p>If you can&#8217;t explain it simply, you don&#8217;t understand it well enough.</p></blockquote>
+
+<p>And that&#8217;s enough for this entry. Let the real action begin!</p>
+]]></content>
+  </entry>
+  
+</feed>
