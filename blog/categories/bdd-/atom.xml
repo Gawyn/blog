@@ -4,7 +4,7 @@
   <title><![CDATA[Category: bdd, | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/blog/categories/bdd-/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-04T00:56:48+02:00</updated>
+  <updated>2012-02-04T01:02:33+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -34,12 +34,12 @@ between them.</p>
 
 <p>In the university, we are taught that the main phases of the software are specification, design,
  implementation and testing, in this order. In TDD, testing comes before implementation;
- and thanks to its tools, it can be used as a kind of specification.</p>
+ and thanks to some testing tools, it can be used as a kind of specification.</p>
 
-<p>In a TDD process, we develop first the test and then we pass to the real
+<p>In a TDD process, we develop first the test and then we work on the "real"
  code until the test accepts it. In an advanced project, when we implement
  a change into the code, we run all the tests, and not only the new one:
- like this we can detect quickly if a new piece of code it’s provoking
+ like this we can detect quickly if a new piece of code is causing
  errors in old features.</p>
 
 <p><em>The TDD process:</em>
@@ -66,12 +66,12 @@ Rspec and Cucumber.</p>
 <h2>Conclusion</h2>
 
 <p>Even if it's an expansion, and a good one, BDD is not "better" than TDD.
-It's just different. In some cases, using BDD just doesn't have sense.
+It's just different. In some cases, using BDD doesn't have sense.
 For example, in a gem or a plugin, to test the behavior of the user is
 just impossible.</p>
 
-<p>Actually, developers naturally understand that: they just are confused
-by the similar names of B(bi)DD and T(ti)DD. You don't code a gem using
+<p>Actually, developers instinctively understand that: they just are confused
+by the similar names of B(bi)DD and T(ti)DD. You don't develop a gem using
 BDD, even if it sounds cool: it's TDD.</p>
 
 <p>PS: Another day we should talk if BDD and TDD are so useful or if it's
