@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-03T22:51:08+02:00</updated>
+  <updated>2012-02-03T23:07:27+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -43,7 +43,7 @@ between them.</p>
  errors in old features.</p>
 
 <p><em>The TDD process:</em>
-<img class="center" src="images/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
 
 <h2>BDD (Behavior-Driven Development)</h2>
 
@@ -58,7 +58,7 @@ over again with a new unit test.</p>
 around a group of unit tests.</strong></p>
 
 <p><em>The BDD process:</em>
-<img class="center" src="images/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
 
 <p>In BDD we also try to make tests particularly readable, using tools like
 Rspec and Cucumber.</p>
