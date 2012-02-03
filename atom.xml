@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-03T23:07:27+02:00</updated>
+  <updated>2012-02-04T00:56:48+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -18,8 +18,8 @@
     <link href="http://Gawyn.github.com/blog/blog/2012/02/03/tdd-equals-bdd/"/>
     <updated>2012-02-03T20:35:00+02:00</updated>
     <id>http://Gawyn.github.com/blog/blog/2012/02/03/tdd-equals-bdd</id>
-    <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice that they use the
-terms TDD and BDD. That was specially strange for me in the RuPy 2011,
+    <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice a kind of confusion
+around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially strange for me in the RuPy 2011,
 when I was still not very sure of the difference between those two
 software development techniques, and (at least for me) everyone used
 them indifferently.</p>
