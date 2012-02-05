@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: rails, | Cristian Planas]]></title>
-  <link href="http://Gawyn.github.com/blog/blog/categories/rails-/atom.xml" rel="self"/>
+  <title><![CDATA[Category: rails | Cristian Planas]]></title>
+  <link href="http://Gawyn.github.com/blog/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-05T02:57:10+02:00</updated>
+  <updated>2012-02-05T16:01:18+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
