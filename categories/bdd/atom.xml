@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: bdd | Cristian Planas]]></title>
-  <link href="http://Gawyn.github.com/blog/blog/categories/bdd/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/blog/categories/bdd/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-09T10:46:36+02:00</updated>
+  <updated>2012-02-09T10:54:01+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[TDD != BDD]]></title>
-    <link href="http://Gawyn.github.com/blog/blog/2012/02/03/tdd-equals-bdd/"/>
+    <link href="http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/"/>
     <updated>2012-02-03T20:35:00+02:00</updated>
-    <id>http://Gawyn.github.com/blog/blog/2012/02/03/tdd-equals-bdd</id>
+    <id>http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd</id>
     <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice a kind of confusion
 around the terms 'TDD' and 'BDD'. That was specially strange for me in the RuPy 2011,
 when I was still not very sure of the difference between those two
