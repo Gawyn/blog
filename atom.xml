@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-22T21:41:03+02:00</updated>
+  <updated>2012-02-22T22:08:12+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -138,9 +138,18 @@ usual if and else idioms, but count with some nice additions.</p>
 
 
 <p>In any kind of code, negative conditions are used quite often: and the
-if not idiom is not natural at all. Ruby provides of an specific idiom
-to state a negative condition: unless. This also has its counterpart in
-loops, as until is the opposite of while.</p>
+<code>if not idiom</code> is not natural at all. Ruby provides of an specific idiom
+to state a negative condition: unless. For example, this:</p>
+
+<pre><code>if array.length != 1
+</code></pre>
+
+<p>looks much nice like this:</p>
+
+<pre><code>unless array.length == 1
+</code></pre>
+
+<p>This also has its counterpart in loops, as until is the opposite of while.</p>
 
 <ul>
 <li><strong>Ruby is an easy-going guy</strong></li>
