@@ -121,17 +121,26 @@ usual if and else idioms, but count with some nice additions.</p>
 
 
 <p>In any kind of code, negative conditions are used quite often: and the
-if not idiom is not natural at all. Ruby provides of an specific idiom
-to state a negative condition: unless. This also has its counterpart in
-loops, as until is the opposite of while.</p>
+<code>if not</code> idiom is not natural at all. Ruby provides of an specific idiom
+to state a negative condition: <code>unless</code>. For example, this:</p>
+
+<pre><code>if array.length != 1
+</code></pre>
+
+<p>looks much more nice like this:</p>
+
+<pre><code>unless array.length == 1
+</code></pre>
+
+<p>This also has its counterpart in loops, as until is the opposite of while.</p>
 
 <ul>
 <li><strong>Ruby is an easy-going guy</strong></li>
 </ul>
 
 
-<p>And thinks that most of the time people are saying the truth. So when
-Ruby evaluates a variable as a condition, everything except nil and
+<p>Andi he thinks that most of the time people are saying the truth. So when
+Ruby evaluates a statement as a condition, everything except nil and
 false will be passed as true. That has some interesting effects:</p>
 
 <pre><code>if 0 puts 'C developers, 0 is true in Ruby!'
@@ -143,7 +152,7 @@ false will be passed as true. That has some interesting effects:</p>
 
 
 <p>Ruby always try to be as readable as possible, so it adds a new way to
-define a condition: leaving it after the actual code. For example,
+define a condition: leaving it after the block. For example,
 following the example given before:</p>
 
 <pre><code>puts 'C developers, 0 is true in Ruby!' if 0
@@ -171,11 +180,11 @@ end
 
 <p>That&#8217;s a great help. For example, imagine we have this code:</p>
 
-<pre><code>puts "The length is 2" unless a.nil || a.length == 2
+<pre><code>puts "The length is 2" unless a.nil? || a.length != 2
 </code></pre>
 
 <p>In the case that a is nil, in other languages we would have an
-exception, as the nil element doesn&#8217;t have any method called length  But
+exception, as the <code>nil</code> element doesn&#8217;t have any method called <code>length</code>.  But
 Ruby is smart enough to know that in an OR you don&#8217;t need to evaluate
 the other conditions if one is true.</p>
 
@@ -185,7 +194,7 @@ the other conditions if one is true.</p>
 
 
 <p>When a Ruby beginner faces a piece of code, the most exotic idiom he
-can find will probably this: ||=. This is called the nil guard. It comes
+can find will probably this: <code>||=</code>. This is called the nil guard. It comes
 to save a typical problem: an assignation that only should be executed
 when the variable assigned is nil.</p>
 
@@ -197,7 +206,7 @@ when the variable assigned is nil.</p>
 <pre><code>a = [] if a.nil?
 </code></pre>
 
-<p>it&#8217;s just more elegant. As you can see, the nil guard is related with
+<p>It&#8217;s just more elegant. As you can see, the nil guard is related with
 the executing the conditionals in order thing.</p>
 </div>
 
@@ -224,6 +233,12 @@ the executing the conditionals in order thing.</p>
 <time datetime="2012-02-22T01:15:00+02:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2012</time>
       
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
 
     </p>
     
@@ -240,8 +255,6 @@ the executing the conditionals in order thing.</p>
       
         <a class="basic-alignment left" href="/blog/2012/02/08/presenting-tweetmovies/" title="Previous Post: Presenting TweetMovies">&laquo; Presenting TweetMovies</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/02/22/the-beauty-of-ruby-conditionals/" title="next Post: The beauty of Ruby conditionals">The beauty of Ruby conditionals &raquo;</a>
       
     </p>
   </footer>
@@ -275,10 +288,6 @@ the executing the conditionals in order thing.</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/02/22/the-beauty-of-ruby-conditionals/">The beauty of Ruby conditionals</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2012/02/08/presenting-tweetmovies/">Presenting TweetMovies</a>
       </li>
     
@@ -288,6 +297,10 @@ the executing the conditionals in order thing.</p>
     
       <li class="post">
         <a href="/blog/2012/02/03/tdd-equals-bdd/">TDD != BDD</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/01/big-models/">Big models, small controllers</a>
       </li>
     
   </ul>
