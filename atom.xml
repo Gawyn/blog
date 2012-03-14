@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-03-14T20:26:57+02:00</updated>
+  <updated>2012-03-14T20:30:52+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hola]]></title>
-    <link href="http://Gawyn.github.com/blog/2012/03/14/hola/"/>
-    <updated>2012-03-14T20:02:00+02:00</updated>
-    <id>http://Gawyn.github.com/blog/2012/03/14/hola</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[The beauty of Ruby conditionals]]></title>
