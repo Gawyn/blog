@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-02-23T13:39:42+02:00</updated>
+  <updated>2012-03-14T20:26:57+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hola]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/03/14/hola/"/>
+    <updated>2012-03-14T20:02:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/03/14/hola</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The beauty of Ruby conditionals]]></title>
@@ -120,8 +129,7 @@ when the variable assigned is nil.</p>
 <pre><code>a = [] if a.nil?
 </code></pre>
 
-<p>It&#8217;s just more elegant. As you can see, the nil guard is related with
-the executing the conditionals in order thing.</p>
+<p>It&#8217;s just more elegant.</p>
 ]]></content>
   </entry>
   

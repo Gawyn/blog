@@ -206,8 +206,7 @@ when the variable assigned is nil.</p>
 <pre><code>a = [] if a.nil?
 </code></pre>
 
-<p>It&#8217;s just more elegant. As you can see, the nil guard is related with
-the executing the conditionals in order thing.</p>
+<p>It&#8217;s just more elegant.</p>
 </div>
 
 
@@ -247,6 +246,10 @@ the executing the conditionals in order thing.</p>
   <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Gawyn.github.com/blog/2012/02/22/the-beauty-of-ruby-conditionals/" data-via="cristianplanas" data-counturl="http://Gawyn.github.com/blog/2012/02/22/the-beauty-of-ruby-conditionals/" >Tweet</a>
   
   
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
 </div>
 
@@ -255,6 +258,8 @@ the executing the conditionals in order thing.</p>
       
         <a class="basic-alignment left" href="/blog/2012/02/08/presenting-tweetmovies/" title="Previous Post: Presenting TweetMovies">&laquo; Presenting TweetMovies</a>
       
+      
+        <a class="basic-alignment right" href="/blog/2012/03/14/hola/" title="next Post: Hola">Hola &raquo;</a>
       
     </p>
   </footer>
@@ -284,6 +289,10 @@ the executing the conditionals in order thing.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/03/14/hola/">Hola</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/02/22/the-beauty-of-ruby-conditionals/">The beauty of Ruby conditionals</a>
       </li>
     
@@ -297,10 +306,6 @@ the executing the conditionals in order thing.</p>
     
       <li class="post">
         <a href="/blog/2012/02/03/tdd-equals-bdd/">TDD != BDD</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/02/01/big-models/">Big models, small controllers</a>
       </li>
     
   </ul>
@@ -356,6 +361,31 @@ the executing the conditionals in order thing.</p>
 
 
 
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/gawyn/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/gawyn.json?callback=display_coderwall"></script>
+  </p>
+  
+</section>
+
+
   
 </aside>
 
@@ -388,7 +418,24 @@ the executing the conditionals in order thing.</p>
 
 
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
