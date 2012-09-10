@@ -4,7 +4,7 @@
   <title><![CDATA[The blog of a developer]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-03-14T21:03:19+02:00</updated>
+  <updated>2012-09-11T00:53:54+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -14,9 +14,37 @@
 
   
   <entry>
+    <title type="html"><![CDATA[In a vim workshop]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/09/05/in-a-vim-workshop/"/>
+    <updated>2012-09-05T00:42:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/09/05/in-a-vim-workshop</id>
+    <content type="html"><![CDATA[<p>Long time without any update! I will try to be more perservering with my posts from now on.</p>
+
+<p>In the next weeks I will explain some of my new projects, describing some of the difficulties I had to face and how I solved them. Mainly, issues with the architecture of a social sport betting application and a gem that I developed for it. But this won&#8217;t be today.</p>
+
+<p>What I would like to explain today is how Drew Neil, the creator of <a href="http://vimcasts.org/">Vimcasts</a> and author of <a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a> ran a Vim Masterclass at Itnig HQ, where I work. It was more than one month ago, but it was so cool that it is worth to write about it after so much time. :P</p>
+
+<p>Talking about the workshop, my impression was very positive. As always with Vim, I really feel that I am using only a very small part of its amazing features. The workshop proved me right (about my own lack of skill, but right): Vim is as flexible as you want it to be, and it gives you the possibility to -as Neil&#8217;s book tells- &#8220;edit text at the speed of thought&#8221;.</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/drew\_neil\_and\_me.jpg" title="With Drew Neil" alt="After the workshop"></p>
+
+<p>PS: This weekend <a href="http://baruco.org/">Baruco</a> starts. I will be there, and I hope to tweet quite a lot about it. Follow <a href="https://twitter.com/cristianplanas">@cristianplanas</a> on Twitter!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Discussing bidirectional self-referential associations]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/07/06/discussing-bidirectional-self-referential-associations/"/>
+    <updated>2012-07-06T09:27:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/07/06/discussing-bidirectional-self-referential-associations</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[The beauty of Ruby conditionals]]></title>
     <link href="http://Gawyn.github.com/blog/2012/02/22/the-beauty-of-ruby-conditionals/"/>
-    <updated>2012-02-22T01:15:00+02:00</updated>
+    <updated>2012-02-22T01:15:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/02/22/the-beauty-of-ruby-conditionals</id>
     <content type="html"><![CDATA[<p>Conditionals define the way in which a language specifies its logic. With
 this, they not only define the way you are going to code: they are also
@@ -127,7 +155,7 @@ when the variable assigned is nil.</p>
   <entry>
     <title type="html"><![CDATA[Presenting TweetMovies]]></title>
     <link href="http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/"/>
-    <updated>2012-02-08T22:37:00+02:00</updated>
+    <updated>2012-02-08T22:37:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies</id>
     <content type="html"><![CDATA[<p>When the Web is your passion, you don&#8217;t have enough with your job:
 you continue developing your own tools or applications after hours. Web
@@ -186,7 +214,7 @@ said, <em>Le Cinema Règne!</em></p>
   <entry>
     <title type="html"><![CDATA[Programmer Anarchy]]></title>
     <link href="http://Gawyn.github.com/blog/2012/02/05/programmer-anarchy/"/>
-    <updated>2012-02-05T13:10:00+02:00</updated>
+    <updated>2012-02-05T13:10:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/02/05/programmer-anarchy</id>
     <content type="html"><![CDATA[<p>In the <a href="http://rupy.eu/">Rupy 2011</a>, I assisted to some very interesting
 conferences, like the ones by <a href="https://twitter.com/#!/josevalim">José Valim</a> or <a href="https://twitter.com/#!/wycats">Yehuda Katz</a>.
@@ -222,7 +250,7 @@ hilarous:</p>
   <entry>
     <title type="html"><![CDATA[TDD != BDD]]></title>
     <link href="http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/"/>
-    <updated>2012-02-03T20:35:00+02:00</updated>
+    <updated>2012-02-03T20:35:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd</id>
     <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice a kind of confusion
 around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially strange for me in the RuPy 2011,
@@ -288,7 +316,7 @@ only a hype.</p>
   <entry>
     <title type="html"><![CDATA[Big models, small controllers]]></title>
     <link href="http://Gawyn.github.com/blog/2012/02/01/big-models/"/>
-    <updated>2012-02-01T11:04:00+02:00</updated>
+    <updated>2012-02-01T11:04:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/02/01/big-models</id>
     <content type="html"><![CDATA[<p>OK, yeah, the title of this entry is one of the most common and repeated
 sentences about Rails (and MVC in general) development. But there is
@@ -393,7 +421,7 @@ inherit_resources, even if I don&#8217;t really use it so often (shame on me).</
   <entry>
     <title type="html"><![CDATA[Why do I love method_missing]]></title>
     <link href="http://Gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/"/>
-    <updated>2012-01-29T17:27:00+02:00</updated>
+    <updated>2012-01-29T17:27:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing</id>
     <content type="html"><![CDATA[<p>Every Ruby developer has some tricks that he loves. Sometimes it&#8217;s not even necessary to use them a lot: it&#8217;s enough if you like them only in a philosophical or aesthetical way. When you talk about Ruby to a newcomer, the first thing you do is to give an enthusiastic description about that technique, your favourite one. And for me, I guess it&#8217;s <code>method_missing</code>.</p>
 
@@ -439,7 +467,7 @@ end
   <entry>
     <title type="html"><![CDATA[Welcome to my new blog!]]></title>
     <link href="http://Gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog/"/>
-    <updated>2012-01-29T03:44:00+02:00</updated>
+    <updated>2012-01-29T03:44:00+01:00</updated>
     <id>http://Gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog</id>
     <content type="html"><![CDATA[<p>Being at the same time an IT guy and a literature lover, I guess it&#8217;s normal I created a lot of blogs in my life: <a href="http://gawyn.blogspot.com/">El blog de Gawyn</a>, <a href="http://librosyfilms.wordpress.com/">Libros y Films</a>, and specially <a href="http://cafemarat.blogspot.com/">Café Marat</a> a blog with 73 (long) entries written in almost two years and that even after not being updated for more then three years, is still receiving almost 1.000 visits every month. I also created a cinema magazine, <a href="http://fundidoanegro.net">Fundido a Negro</a> that was also my first experience with Rails.</p>
 

@@ -2,38 +2,48 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/02/01/big-models/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/02/05/programmer-anarchy/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/2012/02/22/the-beauty-of-ruby-conditionals/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-03-14T19:24:57+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://Gawyn.github.com/blog/2012/07/06/discussing-bidirectional-self-referential-associations/
+        </loc>
+        <lastmod>2012-07-06T09:27:49+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://Gawyn.github.com/blog/2012/09/05/in-a-vim-workshop/</loc>
+        <lastmod>2012-09-11T00:52:58+02:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/blog/archives/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-09-11T00:52:58+02:00</lastmod>
     </url>
     <url>
         <loc>http://Gawyn.github.com/blog/</loc>
-        <lastmod>2012-03-14T20:24:57+02:00</lastmod>
+        <lastmod>2012-09-11T00:52:58+02:00</lastmod>
     </url>
 </urlset>

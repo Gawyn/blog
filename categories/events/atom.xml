@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: events | The blog of a developer]]></title>
+  <link href="http://Gawyn.github.com/blog/categories/events/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/blog/"/>
+  <updated>2012-09-11T00:53:54+02:00</updated>
+  <id>http://Gawyn.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[In a vim workshop]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/09/05/in-a-vim-workshop/"/>
+    <updated>2012-09-05T00:42:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/09/05/in-a-vim-workshop</id>
+    <content type="html"><![CDATA[<p>Long time without any update! I will try to be more perservering with my posts from now on.</p>
+
+<p>In the next weeks I will explain some of my new projects, describing some of the difficulties I had to face and how I solved them. Mainly, issues with the architecture of a social sport betting application and a gem that I developed for it. But this won't be today.</p>
+
+<p>What I would like to explain today is how Drew Neil, the creator of <a href="http://vimcasts.org/">Vimcasts</a> and author of <a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a> ran a Vim Masterclass at Itnig HQ, where I work. It was more than one month ago, but it was so cool that it is worth to write about it after so much time. :P</p>
+
+<p>Talking about the workshop, my impression was very positive. As always with Vim, I really feel that I am using only a very small part of its amazing features. The workshop proved me right (about my own lack of skill, but right): Vim is as flexible as you want it to be, and it gives you the possibility to -as Neil's book tells- "edit text at the speed of thought".</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/drew_neil_and_me.jpg" title="With Drew Neil" alt="After the workshop"></p>
+
+<p>PS: This weekend <a href="http://baruco.org/">Baruco</a> starts. I will be there, and I hope to tweet quite a lot about it. Follow <a href="https://twitter.com/cristianplanas">@cristianplanas</a> on Twitter!</p>
+]]></content>
+  </entry>
+  
+</feed>
