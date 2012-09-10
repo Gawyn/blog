@@ -4,7 +4,7 @@
   <title><![CDATA[The blog of a developer]]></title>
   <link href="http://Gawyn.github.com/blog/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/blog/"/>
-  <updated>2012-09-11T00:58:12+02:00</updated>
+  <updated>2012-09-11T01:08:35+02:00</updated>
   <id>http://Gawyn.github.com/blog/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -29,15 +29,6 @@
 <p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/drew_neil_and_me.jpg" title="With Drew Neil" alt="After the workshop"></p>
 
 <p>PS: This weekend <a href="http://baruco.org/">Baruco</a> starts. I will be there, and I hope to tweet quite a lot about it. Follow <a href="https://twitter.com/cristianplanas">@cristianplanas</a> on Twitter!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Discussing bidirectional self-referential associations]]></title>
-    <link href="http://Gawyn.github.com/blog/2012/07/06/discussing-bidirectional-self-referential-associations/"/>
-    <updated>2012-07-06T09:27:00+02:00</updated>
-    <id>http://Gawyn.github.com/blog/2012/07/06/discussing-bidirectional-self-referential-associations</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
