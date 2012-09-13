@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: baruco, | The blog of a developer]]></title>
+  <link href="http://Gawyn.github.com/blog/categories/baruco-/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/blog/"/>
+  <updated>2012-09-13T14:47:09+02:00</updated>
+  <id>http://Gawyn.github.com/blog/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BaRuCo: first part]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/09/11/baruco-first-part/"/>
+    <updated>2012-09-11T01:14:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/09/11/baruco-first-part</id>
+    <content type="html"><![CDATA[<p>Last weekend I was able to assist to the <a href="http://baruco.org/">Barcelona Ruby Conference</a>, organized by our friends of <a href="http://codegram.com/">Codegram</a>. The list of speakers looked very promising and the event didn't disappoint anyone.</p>
+
+<p>First of all (quite literally) the breakfast. All the attendants enjoyed of a really tasty breakfast, with all kind of food and drink. Just check the picture:</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/baruco_breakfast.jpg" title="Breakfast at Baruco" alt="Breakfast at Baruco"></p>
+
+<p>There were 16 talks in BaRuCo, so I will list and describe them very shortly:</p>
+
+<ul>
+<li><p><strong>Back to first principles</strong> by <strong>Scott Chacon</strong>: The CIO of GitHub and author of the ProGit book gave one of those talks that makes you remember why you love the way Ruby developers work and how much we still have to improve to create businesses that live up to their technologies.</p></li>
+<li><p><strong>Rubymotion for faster client/server development</strong> by <strong>Tammer Saleh &amp; Randall Thomas</strong>: A short and intense introduction to Rubymotion. The only problem is that when the talk finished, I had the feeling that Rubymotion had too many bugs to be used consistently.</p></li>
+<li><p><strong>Uniformity ain't all bad: getting consistent behavior across your API</strong> by <strong>Alex Koppel</strong>: The author of the Koala gem showed us some bad practices in API creation, and how they make developers unhappy. He also had awesome pictures of koalas.</p></li>
+<li><p><strong>Deconstructing the framework</strong> by <strong>Gary Bernhardt</strong>: A pretty intense talk by the man behind <a href="https://www.destroyallsoftware.com">Destroy All Software</a>, describing the typical components of a framework, and how they could change. A call for all RoR developers to rethink the own base of our daily work.</p></li>
+<li><p><strong>Life beyond HTTP</strong> by <strong>Anthony Eden</strong>: Another introductory talk, but this time to "the other" protocols. Pretty didactic.</p></li>
+<li><p><strong>Programming workout</strong> by <strong>Michal Taszycki</strong>: One of my favourite talks of the conference. A description of how to get from beginner to master in any discipline, with some useful techniques for improving in any area. I really like this kind of talks with a broader scope.</p></li>
+<li><p><strong>Tracing your way through Ruby</strong> by <strong>Elise Huard</strong>: A pretty deep analysis of the tools that Ruby developers have for finding a bug in the internals of Ruby. One of those talks that would be more useful as an article or even a book: too much material to remember!</p></li>
+<li><p><strong>Why Agile (A short history of software engineering, and other ideas that didn't work)</strong> by <strong>Paolo Perrota</strong>: I was a big fan of Mr. Perrota since I read <em>Metaprogramming Ruby</em>, a book which changed the way I understand developing; but now... fuck, everybody in the congress fell in love with him. He stole the show with a great and very funny talk about how the own concept of software engineering is a misunderstanding of our craft.</p></li>
+</ul>
+
+
+<p>And that was all for the first day! At night there was a beach party where I could meet again with old friends like @holamon and @alexmarles. I talked a bit with Paolo Perrota and he even signed his book:</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/metaprogramming_ruby_signed.jpg" title="Metaprogramming Ruby signed" alt="Metaprogramming Ruby signed"></p>
+
+<p>In a few days I will write the second part of this article, with all the talks of the second day. Thank you for reading!</p>
+]]></content>
+  </entry>
+  
+</feed>
